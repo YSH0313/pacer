@@ -1,8 +1,8 @@
 # 异步后端框架
 
 ##初次拉代码，部署本地环境：
-- 1、git clone 
-- 3、settings.py中的MYSQL地址改为自己的
+- 1、git clone https://github.com/YSH0313/pacer.git
+- 2、settings.py中的MYSQL地址改为自己的
 
 ##运行环境
 - Python3.7.2及以上
