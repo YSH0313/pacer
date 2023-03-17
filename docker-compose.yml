@@ -1,0 +1,15 @@
+version: "3"
+services:
+  pacer:
+    restart: always
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/code
+    ports:
+      - "8889:8889"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1g"
