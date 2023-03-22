@@ -7,7 +7,7 @@ from aiohttp import web
 from web_tools.spider_log import SpiderLog
 from urls import urlpatterns
 from web_tools.tools import get_ip
-from middleware.connecter import LoginAuth
+from middleware.JWTfilter import LoginAuth
 from setting import is_auth_required, login_name
 
 
