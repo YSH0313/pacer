@@ -48,13 +48,13 @@ class Router(SpiderLog):
             url_list = url_patterns_map[args.app_name if args.app_name else self.app_name]
             for method_info in url_list:
                 method = method_info[2]
-                router_method = self.auth_required(method) if is_auth_required and method.__name__ != login_name else method
+                router_method = self.auth_required(method) if is_auth_required and method.__name__ not in login_name else method
                 app.router.add_route(method_info[0], method_info[1], router_method)
         else:
             for app_name, url_list in url_patterns_map.items():
                 for method_info in url_list:
                     method = method_info[2]
-                    router_method = self.auth_required(method) if is_auth_required and method.__name__ != login_name else method
+                    router_method = self.auth_required(method) if is_auth_required and method.__name__ not in login_name else method
                     app.router.add_route(method_info[0], method_info[1], router_method)
 
         for route in list(app.router.routes()):

@@ -14,4 +14,4 @@ REDIS_HOST_LISTS = {
 }
 
 is_auth_required = False  # 是否要开启用户登录验证
-login_name = 'login'  # 登录视图方法名，用于给登录视图添加白名单，不验证登录
+login_name = ['login']  # 登录视图方法名，用于给登录视图添加白名单，不验证登录
