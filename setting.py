@@ -8,9 +8,9 @@ Mysql = {
 }
 # 连接redis数据库
 REDIS_HOST_LISTS = {
-    'host': 'bailian-aliyun-crawler7.bl-ai.com',
+    'host': 'yours',
     'port': 63791,
-    'password': 'dADM1QUHjD@'
+    'password': 'yours'
 }
 
 is_auth_required = False  # 是否要开启用户登录验证
