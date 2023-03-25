@@ -6,8 +6,10 @@
 
 ## 运行环境
 - Python3.7.2及以上
+- 安装requirements.txt依赖包
 
 ## 使用
+- 使用pacer -p <project_name> 命令创建项目
 - 使用production.py创建app
 - application目录下存放创建的app项目
 - 在创建的app中写视图函数
