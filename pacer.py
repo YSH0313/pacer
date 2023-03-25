@@ -14,7 +14,7 @@ from web_tools.builder import creat_file
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Command parameters related to creating a pacer project project')
+    parser = argparse.ArgumentParser(description='Command parameters related to creating a pacer_builder project project')
     parser.add_argument('-p', '--projectName', help='Name of the project to be created', required=True)
     parser.add_argument('-a', '--appName', help='Name of the prepared application', required=False)
     parser.add_argument('-t', '--projectPath', help='Prepare the path for creating the project', required=False)
@@ -27,7 +27,7 @@ def main():
     # print(f"projectPath: {projectPath}")
 
     def ignore_txt_files(dirname, filenames):
-        return [filename for filename in filenames if filename.endswith('.txt') or filename == 'pacer.py']
+        return [filename for filename in filenames if filename.endswith('.txt') or filename == 'pacer_builder.py']
 
     project_path = os.path.dirname(os.path.abspath(__file__))
     # print(f'项目路径：{project_path}')
