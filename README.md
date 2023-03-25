@@ -1,8 +1,8 @@
 # Asynchronous Backend Framework
 
 ## Initial code pull and local environment deployment:
-- 1. git clone https://github.com/YSH0313/pacer.git
-- 2. Change the MYSQL address in settings.py to your own.
+- git clone https://github.com/YSH0313/pacer.git
+- Change the MYSQL address in settings.py to your own.
 
 ## Operating environment
 - Python3.7.2 and above
