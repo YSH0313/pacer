@@ -1,25 +1,25 @@
-# 异步后端框架
+# Asynchronous Backend Framework
 
-## 初次拉代码，部署本地环境：
-- 1、git clone https://github.com/YSH0313/pacer.git
-- 2、settings.py中的MYSQL地址改为自己的
+## Initial code pull and local environment deployment:
+- 1. git clone https://github.com/YSH0313/pacer.git
+- 2. Change the MYSQL address in settings.py to your own.
 
-## 运行环境
-- Python3.7.2及以上
-- 安装requirements.txt依赖包
+## Operating environment
+- Python3.7.2 and above
+- Install dependencies in requirements.txt
 
-## 使用
-- 使用pacer -p <project_name> 命令创建项目
-- 使用production.py创建app
-- application目录下存放创建的app项目
-- 在创建的app中写视图函数
-- app项目下的urls.py用于存放互相对应的视图和路由
+## Usage
+- Use the pacer -p <project_name> command to create a project.
+- Use production.py to create an app.
+- The application directory contains the created app project.
+- Write view functions in the created app.
+- The urls.py under the app project is used to store corresponding views and routes.
 
-## 启动服务
-- 执行runner.py即可启动服务
+## Start the service
+- Execute runner.py to start the service.
 
-## 生产环境启动服务
-- 可使用docker启动或其它方式，推荐docker启动
-- 可在项目根目录下执行docker-compose up -d
-- 重启服务可直接执行reload_server.sh
-- Dockerfile和docker-compose.yml参数可根据需要自行调整
+## Start the service in production environment
+- Docker can be used to start or other methods, docker startup is recommended.
+- You can execute docker-compose up -d in the project root directory.
+- The service can be restarted directly by executing reload_server.sh.
+- Dockerfile and docker-compose.yml parameters can be adjusted as needed.
